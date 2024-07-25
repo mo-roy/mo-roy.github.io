@@ -2,11 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR">
 <head>
     <meta charset="utf-8" />
-    <title>Portfolio | Morgane ROY</title>
+    <title>Portfolio</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
         body {
             margin: 0;
@@ -17,7 +14,7 @@
         }
         .portfolio-section {
             width: 100%;
-            padding: auto;
+            padding: 0; /* Remove padding from the section */
             height: 100vh;
             position: relative;
             display: flex;
@@ -46,16 +43,20 @@
         /* Media query for mobile devices */
         @media (max-width: 767.98px) {
             .portfolio-section {
-                margin-bottom: 10px; /* Reduce margin for mobile */
-                height: auto; /* Allow sections to adjust height based on content */
-                border-bottom: 0; /* Remove border for mobile */
+                margin-bottom: 10px;
+                height: auto;
+                border-bottom: 0; 
+                flex-direction: column;
+                padding: 10px;
             }
             .portfolio-image {
-                max-width: 100%; /* Allow images to take full width on mobile */
-                max-height: 100%; /* Allow images to take full height on mobile */
+                max-width: 100%; 
+                max-height: auto;
             }
             .portfolio-video, .portfolio-motion {
                 width: 100%;
+                position: static;
+                transform: none;
             }
         }
     </style>
@@ -140,6 +141,8 @@
             <img src="images/p23.jpg" class="portfolio-image img-fluid" alt="Page 23">
         </div>
     </div>
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
