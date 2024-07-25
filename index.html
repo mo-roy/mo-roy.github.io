@@ -2,12 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR">
 <head>
     <meta charset="utf-8" />
-    <title>Portfolio</title>
-    <link href="Portfolio-web-resources/css/idGeneratedStyles.css" rel="stylesheet" type="text/css" />
+    <title>Portfolio | Morgane ROY</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
         body {
             margin: 0;
             overflow-x: hidden;
+        }
+        .container-fluid {
+            padding: 0; /* Remove padding from the container */
         }
         .portfolio-section {
             width: 100%;
@@ -17,9 +23,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border-bottom: 1px solid #000; 
-            margin-bottom: 20px;
-            page-break-after: always;
+            border-bottom: 1px solid #000; /* Adds a border between sections */
+            margin-bottom: 20px; /* Adds space between sections */
+            page-break-after: always; /* For printing to PDF */
         }
         .portfolio-image {
             max-width: 90%;
@@ -37,85 +43,103 @@
             max-width: 100%; 
             max-height: 100%;
         }
+        /* Media query for mobile devices */
+        @media (max-width: 767.98px) {
+            .portfolio-section {
+                margin-bottom: 10px; /* Reduce margin for mobile */
+                height: auto; /* Allow sections to adjust height based on content */
+                border-bottom: 0; /* Remove border for mobile */
+            }
+            .portfolio-image {
+                max-width: 100%; /* Allow images to take full width on mobile */
+                max-height: 100%; /* Allow images to take full height on mobile */
+            }
+            .portfolio-video, .portfolio-motion {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body id="Portfolio">
-    <div class="portfolio-section">
-        <img src="images/p1.jpg" class="portfolio-image" alt="Page 1">
+    <div class="container-fluid">
+        <div class="portfolio-section">
+            <img src="images/p1.jpg" class="portfolio-image img-fluid" alt="Page 1">
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p2.jpg" class="portfolio-image img-fluid" alt="Page 2">
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p3.jpg" class="portfolio-image img-fluid" alt="Page 3">
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p4.jpg" class="portfolio-image img-fluid" alt="Page 4">
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p5.jpg" class="portfolio-image img-fluid" alt="Page 5">
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p6.jpg" class="portfolio-image img-fluid" alt="Page 6">
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p7.jpg" class="portfolio-image img-fluid" alt="Page 7">
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p8.jpg" class="portfolio-image img-fluid" alt="Page 8">
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p9.jpg" class="portfolio-image img-fluid" alt="Page 9">
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p10.jpg" class="portfolio-image img-fluid" alt="Page 10">
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p11.jpg" class="portfolio-image img-fluid" alt="Page 11">
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p12.jpg" class="portfolio-image img-fluid" alt="Page 12">
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p13.jpg" class="portfolio-image img-fluid" alt="Page 13">
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p14.jpg" class="portfolio-image img-fluid" alt="Page 14">
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p15.jpg" class="portfolio-image img-fluid" alt="Page 15">
+            <video class="portfolio-video" autoplay loop muted>
+                <source src="./marche.mp4" type="video/mp4">
+                Navigateur non supporté.
+            </video>
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p16.jpg" class="portfolio-image img-fluid" alt="Page 16">
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p17.jpg" class="portfolio-image img-fluid" alt="Page 17">
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p18.jpg" class="portfolio-image img-fluid" alt="Page 18">
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p19.jpg" class="portfolio-image img-fluid" alt="Page 19">
+            <video class="portfolio-motion" controls>
+                <source src="./logo-lyon24.mp4" type="video/mp4">
+                Navigateur non supporté.
+            </video>
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p20.jpg" class="portfolio-image img-fluid" alt="Page 20">
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p21.jpg" class="portfolio-image img-fluid" alt="Page 21">
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p22.jpg" class="portfolio-image img-fluid" alt="Page 22">
+        </div>
+        <div class="portfolio-section">
+            <img src="images/p23.jpg" class="portfolio-image img-fluid" alt="Page 23">
+        </div>
     </div>
-    <div class="portfolio-section">
-        <img src="images/p2.jpg" class="portfolio-image" alt="Page 2">
-    </div>
-    <div class="portfolio-section">
-        <img src="images/p3.jpg" class="portfolio-image" alt="Page 3">
-    </div>
-    <div class="portfolio-section">
-        <img src="images/p4.jpg" class="portfolio-image" alt="Page 4">
-    </div>
-    <div class="portfolio-section">
-        <img src="images/p5.jpg" class="portfolio-image" alt="Page 5">
-    </div>
-    <div class="portfolio-section">
-        <img src="images/p6.jpg" class="portfolio-image" alt="Page 6">
-    </div>
-    <div class="portfolio-section">
-        <img src="images/p7.jpg" class="portfolio-image" alt="Page 7">
-    </div>
-    <div class="portfolio-section">
-        <img src="images/p8.jpg" class="portfolio-image" alt="Page 8">
-    </div>
-    <div class="portfolio-section">
-        <img src="images/p9.jpg" class="portfolio-image" alt="Page 9">
-    </div>
-    <div class="portfolio-section">
-        <img src="images/p10.jpg" class="portfolio-image" alt="Page 10">
-    </div>
-    <div class="portfolio-section">
-        <img src="images/p11.jpg" class="portfolio-image" alt="Page 11">
-    </div>
-    <div class="portfolio-section">
-        <img src="images/p12.jpg" class="portfolio-image" alt="Page 12">
-    </div>
-    <div class="portfolio-section">
-        <img src="images/p13.jpg" class="portfolio-image" alt="Page 13">
-    </div>
-    <div class="portfolio-section">
-        <img src="images/p14.jpg" class="portfolio-image" alt="Page 14">
-    </div>
-    <div class="portfolio-section">
-        <img src="images/p15.jpg" class="portfolio-image" alt="Page 15">
-        <video class="portfolio-video" autoplay loop muted>
-            <source src="./marche.mp4" type="video/mp4">
-            Navigateur non supporté.
-        </video>
-    </div>
-    <div class="portfolio-section">
-        <img src="images/p16.jpg" class="portfolio-image" alt="Page 16">
-    </div>
-    <div class="portfolio-section">
-        <img src="images/p17.jpg" class="portfolio-image" alt="Page 17">
-    </div>
-    <div class="portfolio-section">
-        <img src="images/p18.jpg" class="portfolio-image" alt="Page 18">
-    </div>
-    <div class="portfolio-section">
-        <img src="images/p19.jpg" class="portfolio-image" alt="Page 19">
-        <video class="portfolio-motion" controls>
-            <source src="./logo-lyon24.mp4" type="video/mp4">
-            Navigateur non supporté.
-        </video>
-    </div>
-    <div class="portfolio-section">
-        <img src="images/p20.jpg" class="portfolio-image" alt="Page 20">
-    </div>
-    <div class="portfolio-section">
-        <img src="images/p21.jpg" class="portfolio-image" alt="Page 21">
-    </div>
-    <div class="portfolio-section">
-        <img src="images/p22.jpg" class="portfolio-image" alt="Page 22">
-    </div>
-    <div class="portfolio-section">
-        <img src="images/p23.jpg" class="portfolio-image" alt="Page 23">
-    </div>
+    
 </body>
 </html>
