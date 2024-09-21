@@ -1,0 +1,140 @@
+[
+  {
+    "type": "image",
+    "src": "/images/p01.jpg",
+    "alt": "Image: p01.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p02.jpg",
+    "alt": "Image: p02.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p03.jpg",
+    "alt": "Image: p03.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p04.jpg",
+    "alt": "Image: p04.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p05.jpg",
+    "alt": "Image: p05.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p06.jpg",
+    "alt": "Image: p06.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p07.jpg",
+    "alt": "Image: p07.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p08.jpg",
+    "alt": "Image: p08.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p09.jpg",
+    "alt": "Image: p09.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p10.jpg",
+    "alt": "Image: p10.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p11.jpg",
+    "alt": "Image: p11.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p12.jpg",
+    "alt": "Image: p12.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p13.jpg",
+    "alt": "Image: p13.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p14.jpg",
+    "alt": "Image: p14.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p15.jpg",
+    "alt": "Image: p15.jpg",
+    "associatedVideo": "/videos/video-15.mp4"
+  },
+  {
+    "type": "image",
+    "src": "/images/p16.jpg",
+    "alt": "Image: p16.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p17.jpg",
+    "alt": "Image: p17.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p18.jpg",
+    "alt": "Image: p18.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p19.jpg",
+    "alt": "Image: p19.jpg",
+    "associatedVideo": "/videos/video-19.mp4"
+  },
+  {
+    "type": "image",
+    "src": "/images/p20.jpg",
+    "alt": "Image: p20.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p21.jpg",
+    "alt": "Image: p21.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p22.jpg",
+    "alt": "Image: p22.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p23.jpg",
+    "alt": "Image: p23.jpg",
+    "associatedVideo": null
+  }
+]

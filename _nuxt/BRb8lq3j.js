@@ -1,0 +1,1 @@
+import{_ as a,v as n,z as e,A as o,T as _,t as c,R as r}from"./YT38Qxy8.js";import"./CTE_c_Fb.js";const s={};function d(f,i){const t=r;return c(),n("div",null,[e(_,{name:"fade",mode:"out-in",appear:""},{default:o(()=>[e(t)]),_:1})])}const u=a(s,[["render",d]]);export{u as default};
