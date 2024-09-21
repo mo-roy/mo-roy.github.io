@@ -1,0 +1,45 @@
+{
+  "name": "roy_portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@nuxt/bridge": "^3.3.1",
+    "@nuxt/kit": "^3.13.2",
+    "@nuxt/schema": "^3.13.2",
+    "@tsparticles/vue3": "^3.0.1",
+    "animejs": "^3.2.2",
+    "aos": "^2.3.4",
+    "axios": "^1.7.7",
+    "bootstrap": "^4.6.2",
+    "core-js": "^3.25.3",
+    "defu": "^6.1.4",
+    "gsap": "^3.12.5",
+    "lodash": "^4.17.21",
+    "scrollmagic": "^2.0.8",
+    "tsparticles": "^3.5.0",
+    "vue": "^3.2.45",
+    "vue-router": "^4.4.5",
+    "vue-server-renderer": "^2.7.10",
+    "vue-template-compiler": "^2.7.10",
+    "vue2-transitions": "^0.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@nuxt/builder": "^2.18.1",
+    "@nuxt/webpack": "^2.18.1",
+    "@nuxtjs/eslint-module": "^4.1.0",
+    "babel-loader": "^9.2.1",
+    "gh-pages": "^6.1.1",
+    "nuxt": "^3.13.2",
+    "vue-loader": "^16.0.0",
+    "webpack": "^5.0.0"
+  }
+}
