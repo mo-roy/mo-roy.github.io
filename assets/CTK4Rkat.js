@@ -1,0 +1,1 @@
+import{_ as a,v as n,z as e,A as o,T as _,t as c,R as s}from"./Br0uM4W3.js";const r={};function d(f,u){const t=s;return c(),n("div",null,[e(_,{name:"fade",mode:"out-in",appear:""},{default:o(()=>[e(t)]),_:1})])}const l=a(r,[["render",d]]);export{l as default};
