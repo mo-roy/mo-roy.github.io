@@ -7,7 +7,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "gh-pages -d dist"
+    "deploy": "nuxt generate && gh-pages --dotfiles -d .output/public"
   },
   "dependencies": {
     "@nuxt/bridge": "^3.3.1",

@@ -76,7 +76,7 @@
 <script>
 import anime from 'animejs/lib/anime.es.js';
 import throttle from 'lodash/throttle';
-import Particle from '~/src/utils/particle.js'; // Import Particle class
+import Particle from '~/public/script/particle.js'; // Import Particle class
 
 export default {
   name: 'PortfolioSlideshow',
@@ -117,9 +117,9 @@ export default {
       this.isDarkMode = true; // Default to Dark Mode
     }
 
-    // Fetch portfolio items from API
+    // Fetch portfolio items from static JSON file
     try {
-      const response = await fetch('/api/portfolio-items');
+      const response = await fetch('/portfolio-items.json'); // Change the URL to the static JSON file
       if (response.ok) {
         this.portfolioItems = await response.json();
       } else {
@@ -128,6 +128,7 @@ export default {
     } catch (error) {
       console.error("Error fetching portfolio items:", error);
     }
+
 
     // Preload all media
     try {
