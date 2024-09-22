@@ -31,9 +31,6 @@ export default defineNuxtConfig({
     '@/assets/styles/global.css',
   ],
   plugins: [
-    { src: '~/plugins/scrollmagic.js', mode: 'client' },
-    { src: '~/plugins/aos.js', mode: 'client' },
-    { src: '~/plugins/gsap.js', mode: 'client' }
   ],
   components: true,
   build: {
@@ -49,7 +46,7 @@ export default defineNuxtConfig({
   ssr: false,
   target: 'static',
   router: {
-    base: '' // Correct base path for GitHub Pages
+    base: ''
   },
   hooks: {
     'build:before': async () => {
