@@ -57,12 +57,24 @@ export default defineNuxtConfig({
         const imageFiles = fs.readdirSync(imagesPath);
         const videoFiles = fs.readdirSync(videosPath);
         
+        // Map to store videos (both .mp4 and YouTube links)
         const videoMap = new Map();
+        
+        // Handle video files (.mp4)
         videoFiles.forEach(file => {
-          const match = file.match(/^video-(\d{1,2})\.mp4$/);
-          if (match) {
-            const pageNumber = match[1];
+          const mp4Match = file.match(/^video-(\d{1,2})\.mp4$/);
+          if (mp4Match) {
+            const pageNumber = mp4Match[1];
             videoMap.set(pageNumber, `/videos/${file}`);
+          }
+          
+          // Handle text files with YouTube links
+          const txtMatch = file.match(/^video-(\d{1,2})\.txt$/);
+          if (txtMatch) {
+            const pageNumber = txtMatch[1];
+            const filePath = path.join(videosPath, file);
+            const youtubeLink = fs.readFileSync(filePath, 'utf-8').trim();
+            videoMap.set(pageNumber, youtubeLink);
           }
         });
         
@@ -75,11 +87,11 @@ export default defineNuxtConfig({
               type: 'image',
               src: `/images/${file}`,
               alt: `Image: ${file}`,
-              associatedVideo: videoMap.get(pageNumber) || null,
+              associatedVideo: videoMap.get(pageNumber) || null,  // Use either mp4 or YouTube link
             });
           }
         });
-
+  
         const outputPath = path.join(process.cwd(), 'public', 'portfolio-items.json');
         fs.writeFileSync(outputPath, JSON.stringify(portfolioItems, null, 2));
         console.log("Portfolio items JSON generated!");

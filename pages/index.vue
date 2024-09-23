@@ -57,9 +57,19 @@
             class="portfolio-image img-fluid"
           />
 
-          <!-- Display Associated Video Centered Over Image -->
+          <!-- Check if the associatedVideo is a URL (for YouTube or other embeddable videos) -->
+          <iframe 
+            v-if="isEmbeddedVideo(item.associatedVideo)" 
+            class="portfolio-video"
+            :src="getEmbedUrl(item.associatedVideo)"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+          ></iframe>
+
+          <!-- Display Associated Video Centered Over Image (Native Video) -->
           <video 
-            v-if="item.associatedVideo" 
+            v-else-if="item.associatedVideo" 
             class="portfolio-video" 
             controls
             preload="metadata"
@@ -187,6 +197,30 @@ export default {
         this.direction = 'prev';
         this.prevItem();
       }
+    },
+
+        /**
+     * Check if the associatedVideo is a URL, implying it is an embedded video (like a YouTube link).
+     * @param {String} video
+     * @return {Boolean}
+     */
+    isEmbeddedVideo(video) {
+      return video && video.startsWith('http'); // Check if it's a URL (YouTube or other link)
+    },
+
+    /**
+     * Get the embed URL for a given video link.
+     * Currently handles YouTube links.
+     * @param {String} video
+     * @return {String}
+     */
+    getEmbedUrl(video) {
+      // If it's a YouTube link, convert it to the embeddable form
+      const youtubeMatch = video.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+)/);
+      if (youtubeMatch) {
+        return `https://www.youtube.com/embed/${youtubeMatch[1]}`;
+      }
+      return video; // Return original URL if not YouTube
     },
 
     /**
