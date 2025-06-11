@@ -87,7 +87,7 @@
     "type": "image",
     "src": "/images/p15.jpg",
     "alt": "Image: p15.jpg",
-    "associatedVideo": "https://youtu.be/7DcbSrhqDnw"
+    "associatedVideo": null
   },
   {
     "type": "image",
@@ -111,7 +111,7 @@
     "type": "image",
     "src": "/images/p19.jpg",
     "alt": "Image: p19.jpg",
-    "associatedVideo": "/videos/video-19.mp4"
+    "associatedVideo": null
   },
   {
     "type": "image",
@@ -123,7 +123,7 @@
     "type": "image",
     "src": "/images/p21.jpg",
     "alt": "Image: p21.jpg",
-    "associatedVideo": null
+    "associatedVideo": "https://youtu.be/7DcbSrhqDnw"
   },
   {
     "type": "image",
@@ -135,6 +135,18 @@
     "type": "image",
     "src": "/images/p23.jpg",
     "alt": "Image: p23.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p24.jpg",
+    "alt": "Image: p24.jpg",
+    "associatedVideo": null
+  },
+  {
+    "type": "image",
+    "src": "/images/p25.jpg",
+    "alt": "Image: p25.jpg",
     "associatedVideo": null
   }
 ]
